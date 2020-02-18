@@ -1,5 +1,6 @@
 # Excluimos las licencias duplicadas
-Excluimos
+Excluimos:
+
 ``
 packagingOptions {
         exclude 'META-INF/ASL2.0'
@@ -10,3 +11,4 @@ packagingOptions {
     }
 
 ``
+
