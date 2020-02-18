@@ -21,3 +21,11 @@ packagingOptions {
 
 
 ```
+# Agregamos los permisos de internet
+```
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+
+# Agregamos las interfaces de los repositorios de nuestras entidades
+
+
