@@ -106,5 +106,3 @@ class TareaGuardarAlumno(var texto:TextInputEditText?, var ctx:Context?):
 
 }
 ```
-
-
