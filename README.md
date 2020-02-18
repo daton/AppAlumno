@@ -12,3 +12,12 @@ packagingOptions {
 
 ```
 
+# Agregamos las dependencias de Retrofit
+
+```
+//Las siguientes dependencias son las usadas para retrofit en android
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.5.0'
+
+
+```
