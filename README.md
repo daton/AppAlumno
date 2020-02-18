@@ -1,6 +1,6 @@
 # Excluimos las licencias duplicadas
-Debemos agregar las siguientes dependencias de retrofit
-´´
+Excluimos
+``
 packagingOptions {
         exclude 'META-INF/ASL2.0'
         exclude 'META-INF/LICENSE'
@@ -9,4 +9,4 @@ packagingOptions {
         exclude 'META-INF/notice.txt'
     }
 
-´´
+``
