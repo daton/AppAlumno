@@ -9,7 +9,9 @@ import com.google.android.material.textfield.TextInputEditText
 import retrofit2.Retrofit
 import retrofit2.converter.jackson.JacksonConverterFactory
 
-class TareaGuardarAlumno(var texto:TextInputEditText?, var ctx:Context?):
+class TareaGuardarAlumno(var txtEmail:TextInputEditText?,
+                         var txtPswd:TextInputEditText?,
+                         var ctx:Context?):
     AsyncTask<Void,Void,Void>(){
     //Declaramos dos tributos para nuestra interacción con el bakc-end
     var alumno=Alumno()
@@ -18,7 +20,8 @@ class TareaGuardarAlumno(var texto:TextInputEditText?, var ctx:Context?):
 
     override fun onPreExecute() {
         super.onPreExecute()
-        alumno.email=texto?.text.toString()
+        alumno.email=txtEmail?.text.toString()
+        alumno.password=txtPswd?.text.toString()
 
 
     }
@@ -32,7 +35,8 @@ class TareaGuardarAlumno(var texto:TextInputEditText?, var ctx:Context?):
         //Aqui usaremos la bibloteca REtrofir que es muy iportante
 
         var retrofit= Retrofit.Builder()
-            .baseUrl("https://invierno.herokuapp.com/")
+          //  .baseUrl("https://invierno.herokuapp.com/")
+            .baseUrl("http://172.5.10.193:8080/")
             .addConverterFactory(JacksonConverterFactory.create())
             .build()
 
