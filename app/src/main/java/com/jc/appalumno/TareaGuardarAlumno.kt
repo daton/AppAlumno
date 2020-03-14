@@ -35,6 +35,7 @@ class TareaGuardarAlumno(var txtEmail:TextInputEditText?,
         //Aqui usaremos la bibloteca REtrofir que es muy iportante
 
         var retrofit= Retrofit.Builder()
+                //lssaslajsals
           //  .baseUrl("https://invierno.herokuapp.com/")
             .baseUrl("http://172.5.10.193:8080/")
             .addConverterFactory(JacksonConverterFactory.create())
