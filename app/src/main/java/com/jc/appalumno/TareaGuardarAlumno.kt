@@ -37,7 +37,7 @@ class TareaGuardarAlumno(var txtEmail:TextInputEditText?,
         var retrofit= Retrofit.Builder()
                 //lssaslajsals
           //  .baseUrl("https://invierno.herokuapp.com/")
-            .baseUrl("http://172.5.10.193:8080/")
+            .baseUrl("https://admingeer.herokuapp.com/")
             .addConverterFactory(JacksonConverterFactory.create())
             .build()
 
