@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
        //Invocamos al boton por medio de su id
-        ingresar.setOnClickListener {
+        siguiente.setOnClickListener {
 
             //Aqui adentro generamos la navegacion
             var i= Intent(this, LoginActivity::class.java)
