@@ -13,7 +13,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         //Invocamos el boton y su evento
         autenticar.setOnClickListener {
-            TareaGuardarAlumno(txtEmail,txtPassword,this)
+            TareaAutenticarAlumno(txtEmail,txtPassword,this)
                 .execute(null,null,null)
         }
 
