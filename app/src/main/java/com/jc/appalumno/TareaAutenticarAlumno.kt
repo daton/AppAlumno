@@ -1,6 +1,7 @@
 package com.jc.appalumno
 
 import android.content.Context
+import android.content.Intent
 import android.os.AsyncTask
 import android.util.Log
 import android.widget.TextView
@@ -52,6 +53,10 @@ class TareaAutenticarAlumno(var txtEmail:TextInputEditText?,
         Log.i("YO",alumno.id!!)
         //   texto?.text=estatus.mensaje!!
         Toast.makeText(ctx, alumno.id, Toast.LENGTH_LONG ).show()
+        //Aqui una condicion de que si el id es distinto de null los lleve a la siguiente
+        //activity
+        var intent= Intent(ctx?.applicationContext, BienvenidoActivity::class.java)
+        ctx?.startActivity(intent);
     }
 
 
