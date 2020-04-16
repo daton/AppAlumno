@@ -50,13 +50,19 @@ class TareaAutenticarAlumno(var txtEmail:TextInputEditText?,
 
     override fun onPostExecute(result: Void?) {
         super.onPostExecute(result)
-        Log.i("YO",alumno.id!!)
+
         //   texto?.text=estatus.mensaje!!
-        Toast.makeText(ctx, alumno.id, Toast.LENGTH_LONG ).show()
+
         //Aqui una condicion de que si el id es distinto de null los lleve a la siguiente
         //activity
-        var intent= Intent(ctx?.applicationContext, BienvenidoActivity::class.java)
-        ctx?.startActivity(intent);
+        if(alumno.id!=null){
+            var intent= Intent(ctx?.applicationContext, BienvenidoActivity::class.java)
+            ctx?.startActivity(intent);
+        }else{
+
+            Toast.makeText(ctx,"NO se pudo autenticar", Toast.LENGTH_LONG).show()
+        }
+
     }
 
 
